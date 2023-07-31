@@ -5,8 +5,444 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="https://kit.fontawesome.com/9ec8f6aa83.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Navigation Bar Starts Here -->
+    <nav class="navbar">
+        <div class="container flex">
+            <!-- Website Logo -->
+            <div class="nav-logo">
+                <h1 class="site-logo">Traventure</h1>
+            </div>
+            <!-- Navigation Menu -->
+            <div class="flex nav-menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">Tours</a>
+                <a href="#">Destinations</a>
+                <a href="#">Hotels</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Bar Ends Here -->
+
+    <!-- Header Section Starts Here -->
+    <header class="header">
+        <div class="container flex">
+            <!-- Intro Section Starts Here -->
+            <section class="flex intro-section">
+                <h1>Discover the most wonderful places</h1>
+                <a href="#" class="main-btn">Explore Destinations</a>
+            </section>
+            <!-- Intro Section Ends Here -->
+
+            <!-- Main Search Section Starts Here -->
+            <section class="destination-search-section">
+                <form class="flex">
+                    <!-- Search Input One -->
+                    <div class="destination-search-input">
+                        <div></div>
+                        <div class="flex search-input-control">
+                            <label for="">Location</label>
+                            <select>
+                                <option disabled selected>Select Destination</option>
+                                <option>Swat Valley</option>
+                                <option>Hunza Valley</option>
+                                <option>Kalash Valley</option>
+                                <option>Deosai Plains</option>
+                                <option>Fairy Meadows</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Search Input Two -->
+                    <div class="destination-search-input">
+                        <div></div>
+                        <div class="flex search-input-control">
+                            <label for="">When</label>
+                            <input type="date" placeholder="Choose a Date">
+                        </div>
+                    </div>
+
+                    <!-- Search Input Three -->
+                    <div class="destination-search-input">
+                        <div></div>
+                        <div class="flex search-input-control">
+                            <label for="">Person</label>
+                            <select>
+                                <option disabled selected>Number of Persons</option>
+                                <option>1 Person</option>
+                                <option>2 Persons</option>
+                                <option>3 Persons</option>
+                                <option>4 Persons</option>
+                                <option>5 Persons</option>
+                                <option>More than 5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="flex destination-search-button">
+                        <a href="#" class="main-btn"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+                    </div>
+                </form>
+            </section>
+            <!-- Main Search Section Ends Here -->
+        </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <!-- Main Sections Starts Here -->
+    <main>
+        <div class="container">
+            <!-- Popular Destinations Section Starts Here -->
+            <section class="section popular-destination-section">
+                <div class="flex flex-between section-title">
+                    <h2>Popular Destinations</h2>
+                    <div class="view-btn">
+                        <a href="" class="second-btn">View All</a>
+                    </div>
+                </div>
+                <div class="section-content flex flex-between cards-stretch popular-destination-cards">
+                    <!-- Popular Destination Card 1 -->
+                    <div class="popular-destination-card">
+                        <div class="card-image destination-card-image">
+                            <img src="./images/Popular-Destinations/Swat-Valley.png" alt="Swat Valley Pakistan">
+                        </div>
+                        <div class="destination-card-title"><h3 class="card-title">Swat Valley</h3></div>
+                        <div class="destination-card-location"><h4 class="card-sub-title">Pakistan</h4></div>
+                        <div class="destination-card-button">
+                            <a href="#" class="main-btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Popular Destination Card 2 -->
+                    <div class="popular-destination-card">
+                        <div class="card-image destination-card-image">
+                            <img src="./images/Popular-Destinations/Hunza-Valley.png" alt="Hunza Valley Pakistan">
+                        </div>
+                        <div class="destination-card-title"><h3 class="card-title">Hunza Valley</h3></div>
+                        <div class="destination-card-location"><h4 class="card-sub-title">Pakistan</h4></div>
+                        <div class="destination-card-button">
+                            <a href="#" class="main-btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Popular Destination Card 3 -->
+                    <div class="popular-destination-card">
+                        <div class="card-image destination-card-image">
+                            <img src="./images/Popular-Destinations/Kalash-Valley.png" alt="Kalash Valley Pakistan">
+                        </div>
+                        <div class="destination-card-title"><h3 class="card-title">Kalash Valley</h3></div>
+                        <div class="destination-card-location"><h4 class="card-sub-title">Pakistan</h4></div>
+                        <div class="destination-card-button">
+                            <a href="#" class="main-btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Popular Destination Card 4 -->
+                    <div class="popular-destination-card">
+                        <div class="card-image destination-card-image">
+                            <img src="./images/Popular-Destinations/Deosai-Plains.png" alt="Deosai-Plains Pakistan">
+                        </div>
+                        <div class="destination-card-title"><h3 class="card-title">Deosai-Plains</h3></div>
+                        <div class="destination-card-location"><h4 class="card-sub-title">Pakistan</h4></div>
+                        <div class="destination-card-button">
+                            <a href="#" class="main-btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Popular Destination Card 5 -->
+                    <div class="popular-destination-card">
+                        <div class="card-image destination-card-image">
+                            <img src="./images/Popular-Destinations/Fairy-Meadows.png" alt="Fairy-Meadows Pakistan">
+                        </div>
+                        <div class="destination-card-title"><h3 class="card-title">Fairy-Meadows</h3></div>
+                        <div class="destination-card-location"><h4 class="card-sub-title">Pakistan</h4></div>
+                        <div class="destination-card-button">
+                            <a href="#" class="main-btn">Book Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Popular Destinations Section Ends Here -->
+
+            <!-- About Us Section Starts Here -->
+            <section class="section about-us-section">
+                
+
+                <div class="flex flex-between section-content">
+                    <div class="section-content-left">
+                        <div class="section-title">
+                            <h2>About Us</h2>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, voluptate?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, voluptate?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, voluptate?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, voluptate?
+                        </p>
+                    </div>
+                    <div class="section-content-right">
+                        <img src="./images/Traventure-About-Us.png" alt="A Man Booking Tour">
+                    </div>
+                </div>
+            </section>
+            <!-- About Us Section Ends Here -->
+
+
+            <!-- Activities Section Starts Here -->
+            <section class="section activities-section">
+                <div class="flex flex-between section-title">
+                    <h2>Activities</h2>
+                    <div class="view-btn">
+                        <a href="" class="second-btn">View All</a>
+                    </div>
+                </div>
+                <div class="section-content flex flex-between cards-stretch activities-cards">
+                    <!-- Activity Card 1 -->
+                    <div class="activitiy-card">
+                        <div class="card-image activitiy-card-image">
+                            <img src="./images/Activities/Skiing-Activity.png" alt="Skiing Activity">
+                        </div>
+                        <div class="activitiy-card-title"><h3 class="card-title">Skiing</h3></div>
+                    </div>
+
+                    <!-- Activity Card 2 -->
+                    <div class="activitiy-card">
+                        <div class="card-image activitiy-card-image">
+                            <img src="./images/Activities/Sailing-Activity.png" alt="Sailing Activity">
+                        </div>
+                        <div class="activitiy-card-title"><h3 class="card-title">Sailing</h3></div>
+                    </div>
+
+                    <!-- Activity Card 3 -->
+                    <div class="activitiy-card">
+                        <div class="card-image activitiy-card-image">
+                            <img src="./images/Activities/Camping-Activity.png" alt="Camping Activity">
+                        </div>
+                        <div class="activitiy-card-title"><h3 class="card-title">Camping</h3></div>
+                    </div>
+
+                    <!-- Activity Card 4 -->
+                    <div class="activitiy-card">
+                        <div class="card-image activitiy-card-image">
+                            <img src="./images/Activities/Climbing-Activity.png" alt="Climbing Activity">
+                        </div>
+                        <div class="activitiy-card-title"><h3 class="card-title">Climbing</h3></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Activities Section Ends Here -->
+
+
+            <!-- Facilities Section Starts Here -->
+            <section class="section facilities-section">
+
+                <div class="section-title">
+                    <h2>Facilities & Services</h2>
+                </div>
+
+                <div class="section-content flex flex-between facilities-cards">
+                    <!-- Facility Card 1 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Luxury-Buses.png" alt="Luxury Buses">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Luxury Buses</h3></div>
+                    </div>
+
+                    <!-- Facility Card 2 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Premium-Food.png" alt="Premium Food">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Premium Food</h3></div>
+                    </div>
+
+                    <!-- Facility Card 3 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Five-Star-Accommodation.png" alt="Five Star Accommodation">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Five Star Accommodation</h3></div>
+                    </div>
+
+                    <!-- Facility Card 4 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Fun-And-Entertainment.png" alt="Fun And Entertainment">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Fun & Entertainment</h3></div>
+                    </div>
+
+                    <!-- Facility Card 5 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Bonfire.png" alt="Bonfire">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Bonfire</h3></div>
+                    </div>
+
+                    <!-- Facility Card 6 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Tour-Guide.png" alt="Tour Guide">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Tour Guide</h3></div>
+                    </div>
+
+                    <!-- Facility Card 7 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Photography.png" alt="Photography">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Photography</h3></div>
+                    </div>
+
+                    <!-- Facility Card 8 -->
+                    <div class="facility-card">
+                        <div class="card-image facility-card-image">
+                            <img src="./images/Facilities/Ultimate-Shopping.png" alt="Ultimate Shopping">
+                        </div>
+                        <div class="facility-card-title"><h3 class="card-title">Ultimate Shopping</h3></div>
+                    </div>
+
+                </div>
+                
+            </section>
+            <!-- Facilities Section Ends Here -->
+
+            <!-- Hotels Section Starts Here -->
+            <section class="section hotels-section">
+                <div class="flex flex-between section-title">
+                    <h2>Hotels</h2>
+                    <div class="view-btn">
+                        <a href="" class="second-btn">View All</a>
+                    </div>
+                </div>
+
+                <div class="section-content flex flex-between cards-stretch hotel-cards">
+                    <!-- Hotel Card 1 -->
+                    <div class="hotel-card">
+                        <div class="card-image hotel-card-image">
+                            <img src="./images/Hotels/Hotel-One.png" alt="Up Star Resort">
+                        </div>
+                        <div class="hotel-card-title"><h3 class="card-title">Up Star Resort</h3></div>
+                        <div class="flex hotel-card-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4 class="card-sub-title">Swat, Pakistan</h4>
+                        </div>
+                    </div>
+
+                    <!-- Hotel Card 2 -->
+                    <div class="hotel-card">
+                        <div class="card-image hotel-card-image">
+                            <img src="./images/Hotels/Hotel-Two.png" alt="Relaxer Hotel">
+                        </div>
+                        <div class="hotel-card-title"><h3 class="card-title">Relaxer Hotel</h3></div>
+                        <div class="flex hotel-card-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4 class="card-sub-title">Hunza, Pakistan</h4>
+                        </div>
+                    </div>
+
+                    <!-- Hotel Card 3 -->
+                    <div class="hotel-card">
+                        <div class="card-image hotel-card-image">
+                            <img src="./images/Hotels/Hotel-Three.png" alt="Hotel Shine High">
+                        </div>
+                        <div class="hotel-card-title"><h3 class="card-title">Hotel Shine High</h3></div>
+                        <div class="flex hotel-card-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4 class="card-sub-title">Swat, Pakistan</h4>
+                        </div>
+                    </div>
+
+                    <!-- Hotel Card 4 -->
+                    <div class="hotel-card">
+                        <div class="card-image hotel-card-image">
+                            <img src="./images/Hotels/Hotel-Four.png" alt="The Rose Suites">
+                        </div>
+                        <div class="hotel-card-title"><h3 class="card-title">The Rose Suites</h3></div>
+                        <div class="flex hotel-card-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4 class="card-sub-title">Hunza, Pakistan</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Hotels Section Ends Here -->
+
+        </div>
+    </main>
+    <!-- Main Sections Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <footer class="footer">
+        <div class="container flex">
+
+            <!-- Footer Section 1 -->
+            <section class="footer-section">
+                <div class="footer-logo">
+                    <h1 class="site-logo">Traventure</h1>
+                </div>
+
+                <div class="footer-address">
+                    <p class="site-address">
+                        Office No. 000, XYZ Tower, Link Road, Faisalabad, Pakistan
+                    </p>
+                </div>
+            </section>
+
+            <!-- Footer Section 2 -->
+            <section class="footer-section">
+                <div class="footer-heading">
+                    <h2>Important Links</h2>
+                </div>
+
+                <div class="site-links">
+                    <a href="#" target="_blank">Destinations</a>
+                    <a href="#" target="_blank">About Us</a>
+                    <a href="#" target="_blank">Privacy Policy</a>
+                    <a href="#" target="_blank">Terms & Conditions</a>
+                </div>
+            </section>
+
+            <!-- Footer Section 3 -->
+            <section class="footer-section">
+                <div class="footer-heading">
+                    <h2>Follow Us On!</h2>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                </div>
+            </section>
+
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+
+    <script>
+        let nav = document.querySelector(".navbar");
     
+        window.onscroll = () => 
+        {
+            if(window.scrollY > 280) 
+            { nav.classList.add("navbar-scrolled"); }
+            else 
+            { nav.classList.remove("navbar-scrolled"); }
+        }
+    </script>
 </body>
 </html>

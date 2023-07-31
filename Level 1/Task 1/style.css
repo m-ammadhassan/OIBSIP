@@ -1,0 +1,416 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    /* --color-one: #8c7ae6; */
+    --color-one: #00a8ff;
+    --color-two: #f5f6fa;
+    --color-three: #fbc531;
+    --color-four: #e84118;
+    --color-six: #718093;
+    --color-seven: #2f3640;
+}
+
+a { text-decoration: none; }
+
+.container
+{
+    max-width: 120rem;
+    padding: 5rem;
+}
+
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-between
+{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo
+{
+    color: var(--color-three);
+    font-size: 2rem;
+}
+
+.site-address
+{
+    color: var(--color-two);
+    font-size: 1.25rem;
+}
+
+.main-btn
+{
+    display: inline-block;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    font-size: 1.15rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.second-btn
+{
+    display: inline-block;
+    background-color: var(--color-two);
+    color: var(--color-one);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.section { padding: 3rem 0; }
+
+.section-title { margin: 0 0 2rem 0; }
+
+.section-title h2
+{
+    color: var(--color-seven);
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    word-spacing: .5rem;
+}
+
+.section-content { padding: 2rem 0; }
+
+.cards-stretch { align-items: stretch; }
+
+.card
+{
+    margin: 0 0 1rem 0;
+}
+
+.card-image { margin-bottom: .75rem; }
+
+.card-image img
+{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.card-title
+{
+    color: var(--color-seven);
+    letter-spacing: .1rem;
+    margin-bottom: .5rem;
+}
+
+.card-sub-title
+{
+    color: var(--color-six);
+}
+
+
+/* Navigation Bar CSS Starts Here */
+.navbar
+{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.navbar-scrolled { background-color: rgba(0, 0, 0, 1); }
+
+.navbar .container
+{
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar .nav-menu a
+{
+    color: var(--color-two);
+    font-size: 1.25rem;
+    margin: 0 1rem;
+}
+
+.nav-menu a:hover
+{
+    color: var(--color-one);
+    transition: 0.3s all linear;
+}
+
+.nav-menu a.active 
+{
+    color: var(--color-one);
+    font-weight: bold;
+}
+/* Navigation Bar CSS Ends Here */
+
+/* Header CSS Starts Here */
+.header
+{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/background-image.png') no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.header .container
+{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Introduction Section CSS Starts Here */
+.intro-section
+{
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2rem 0;
+}
+.intro-section h1
+{
+    color: var(--color-two);
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+}
+/* Introduction Section CSS Ends Here */
+
+/* Destination Search Section CSS Starts Here*/
+.destination-search-section
+{
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: .25rem;
+    padding: 1rem 2rem;
+    position: relative;
+    bottom: -8rem;
+    z-index: 2;
+}
+
+.destination-search-section form.flex
+{
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.destination-search-input
+{
+    width: 28%;
+    background-color: var(--color-two);
+    box-shadow: 1px 2px 2px var(--color-six);
+    border-radius: .25rem;
+    padding: 1rem 1.5rem;
+}
+
+.search-input-control
+{
+    width: 100%;
+    flex-direction: column;
+}
+
+.search-input-control label
+{
+    color: var(--color-one);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.search-input-control select, .search-input-control input
+{
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-seven);
+    appearance: none;
+    border: none;
+    outline: none;
+    font-size: 1.15rem;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+.search-input-control select option:disabled
+{
+    background-color: var(--color-one);
+    color: var(--color-two);
+    margin: .75rem 0;
+}
+
+.search-input-control select option
+{
+    background-color: black;
+    color: var(--color-one);
+    font-size: 1rem;
+    cursor: pointer;
+    margin: .5rem 0;
+}
+
+.destination-search-button
+{
+    align-items: center;
+    justify-content: center;
+}
+/* Destination Search Section CSS Ends Here*/
+
+/* Header CSS Ends Here */
+
+/* --------------------------------------------------------------- */
+
+/* Main Sections CSS Starts Here */
+main .container
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Popular Destination Section CSS Starts Here */
+.popular-destination-card
+{
+    width: 17%;
+    border: .15rem solid var(--color-six);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.destination-card-title h3.card-title { text-align: center; }
+
+.destination-card-location h4.card-sub-title { text-align: center; }
+
+.destination-card-button a
+{
+    width: 100%;
+    text-align: center;
+    border-radius: .5rem;
+    margin: 1rem 0 0 0;
+    padding: .75rem;
+}
+
+/* Popular Destination Section CSS Ends Here */
+
+/* About Us Section CSS Starts Here */
+.section-content-left
+{
+    width: 60%;
+    padding-right: 3rem;
+}
+
+.section-content-left p
+{
+    color: var(--color-six);
+    font-size: 1.15rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.section-content-right { width: 30%; }
+
+.section-content-right img
+{
+    width: 100%;
+    border-radius: .5rem;
+}
+/* About Us Section CSS Ends Here */
+
+
+/* Activities Section CSS Starts Here */
+.activitiy-card { width: 20%; }
+
+.activitiy-card-title h3.card-title { margin-bottom: 0; }
+/* Activities Section CSS Ends Here */
+
+
+/* Facilities Section CSS Starts Here */
+.facility-card
+{
+    margin-bottom: 2rem;
+}
+
+.facility-card-image
+{
+    width: 15rem;
+    height: 15rem;
+    border: .15rem solid var(--color-six);
+    border-radius: 50%;
+    padding: .75rem;
+}
+
+.facility-card-image img { border-radius: 50%; }
+
+.facility-card-title h3.card-title
+{
+    text-align: center;
+    margin-bottom: 0;
+}
+/* Facilities Section CSS Ends Here */
+
+
+/* Hotels Section CSS Starts Here */
+.hotel-card { width: 22%; }
+
+.hotel-card-location i
+{
+    color: var(--color-seven);
+    margin-right: .5rem;
+}
+/* Hotels Section CSS Ends Here */
+
+
+/* Main Sections CSS Ends Here */
+
+
+/* Footer Section CSS Starts Here */
+.footer
+{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.footer .container
+{
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-section
+{
+    width: 30%;
+}
+
+.footer-logo, .footer-heading
+{
+    margin-bottom: 1rem;
+}
+
+.footer-heading h2
+{
+    color: var(--color-two);
+}
+
+.site-links a
+{
+    color: var(--color-six);
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: .25rem;
+}
+
+.social-links i
+{
+    color: var(--color-one);
+    margin-right: .5rem;
+}
+/* Footer Section CSS Ends Here */

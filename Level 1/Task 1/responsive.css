@@ -1,0 +1,102 @@
+@media only screen and (max-width: 1025px)
+{
+    .container { padding: 5rem 3rem; }
+
+    .header .container { display: block; }
+
+    .intro-section { margin-top: 1rem; }
+
+    .intro-section h1
+    {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .destination-search-section
+    {
+        width: 80%;
+        position: static;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .destination-search-input
+    {
+        width: 50%;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .destination-search-button { margin: 1rem auto 0 auto; }
+
+    .destination-search-button a { padding: .75rem 1rem; }
+
+    .popular-destination-card, .activitiy-card, .hotel-card { width: 30%; margin-bottom: 1.5rem; }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .navbar .container { flex-direction: column; }
+
+    .nav-logo { margin-bottom: 1rem; }
+
+    .header { margin-bottom: 1rem; }
+
+    .intro-section { margin-top: 4rem; }
+
+    .destination-search-section { width: 100%; }
+
+    .destination-search-input { padding: 1rem; }
+
+    .popular-destination-card, .activitiy-card, .hotel-card { width: 40%; }
+
+    .section-content-right { width: 40%; }
+}
+
+@media only screen and (max-width: 620px)
+{
+    .flex
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container { padding: 5rem 2rem; }
+
+    .section { padding: 1rem 0; }
+
+    .section-title { text-align: center; margin-bottom: 1rem; }
+
+    .view-btn { margin-top: 1rem; }
+
+    .header { margin-bottom: 15rem; }
+
+    .intro-section { margin-top: 8rem; }
+
+    .destination-search-input { width: 100%; }
+
+    .search-input-control { align-items: flex-start; }
+
+    .popular-destination-card, .activitiy-card, .hotel-card { width: 51%; }
+
+    .section-content-left, .section-content-right { width: 80%; margin-bottom: 1.5rem; }
+    
+    .section-content-left { padding-right: 0; }
+
+    .section-content-left p { text-align: center; }
+
+    .hotel-card-location.flex {flex-direction: row; justify-content: flex-start;}
+
+    .footer .flex { align-items: center; }
+
+    .footer-section { width: 80%; margin-bottom: 2rem; }
+}
+
+@media only screen and (max-width: 480px)
+{
+    .header { margin-bottom: 22rem; }
+
+    .popular-destination-card, .section-content-left, .section-content-right, .activitiy-card, .hotel-card, .footer-section
+    { width: 90%; }
+}
