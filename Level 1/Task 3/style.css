@@ -1,0 +1,229 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --color-one: #2e86de;
+    --color-two: #54a0ff;
+    --color-three: #222f3e;
+    --color-four: #a70000;
+    --color-five: #c8d6e5;
+}
+
+body
+{
+    background-color: var(--color-one);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container
+{
+    width: 24rem;
+    height: 100vh;
+}
+
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-center
+{
+    align-items: center;
+    justify-content: center;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.site-logo
+{
+    color: var(--color-two);
+    font-size: 2rem;
+}
+
+.main-btn
+{
+    background-color: var(--color-three);
+    color: var(--color-five);
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
+    text-align: center;
+    border: .15rem solid transparent;
+    border-radius: .5rem;
+    padding: .75rem;
+    transition: .5s all ease;
+}
+
+.main-btn:hover
+{
+    background-color: transparent;
+    color: var(--color-three);
+    border-color: var(--color-three);
+}
+
+/* Navigation Bar CSS Starts Her */
+.header
+{
+    height: 12vh;
+    background-color: var(--color-three);
+}
+
+.nav-logo .site-logo
+{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+/* Navigation Bar CSS Ends Her */
+
+
+/* Main Content CSS Starts Here */
+.main
+{
+    height: 80vh;
+    background-color: var(--color-two);
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.input-section
+{
+    background-color: var(--color-five);
+    width: 100%;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.section-title
+{
+    
+    margin-bottom: 1rem;
+}
+
+.section-title h2
+{
+    color: var(--color-three);
+    text-align: center;
+}
+
+.section-content input, .section-content select
+{
+    border: none;
+    outline: none;
+}
+
+.from-section
+{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.from-section .user-input
+{
+    width: 10rem;
+    color: var(--color-three);
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    padding: .75rem 1rem;
+}
+
+.from-section input::placeholder
+{
+    font-size: .95rem;
+}
+
+.from-section .user-choice label
+{
+    color: var(--color-three);
+    font-size: 1.1rem;
+}
+
+.to-section select
+{
+    width: 100%;
+    color: var(--color-three);
+    font-size: .95rem;
+    border-radius: .5rem;
+    padding: .75rem 1rem;
+}
+
+.to-section select option
+{
+    color: var(--color-four);
+    font-size: 1.1rem;
+}
+
+.to-section select option:disabled
+{
+    color: var(--color-three);
+}
+
+
+.buttons-section
+{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.buttons-section .section-content
+{
+    justify-content: space-between;
+}
+
+.buttons-section .section-content .main-btn
+{
+    width: 8rem;
+}
+
+.result-section
+{
+    background-color: var(--color-four);
+    width: 100%;
+    height: 10vh;
+    border-radius: .5rem;
+}
+
+.result-section .section-content h3
+{
+    color: var(--color-five);
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+    word-spacing: .5rem;
+    text-align: center;
+}
+/* Main Content CSS Ends Here */
+
+
+/* Footer CSS Starts Here */
+.footer
+{
+    background-color: var(--color-three);
+    height: 8vh;
+    padding: 0 .75rem;
+}
+
+.footer span
+{
+    color: var(--color-five);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.footer span a
+{
+    color: var(--color-two);
+}
+/* Footer CSS Ends Here */

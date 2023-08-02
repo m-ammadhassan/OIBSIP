@@ -1,0 +1,33 @@
+@media only screen and (max-width: 480px)
+{
+    .container
+    {
+        width: 100%;
+    }
+
+    .main
+    {
+        padding: .25rem .75rem;
+    }
+
+    .from-section
+    {
+        flex-direction: column;
+    }
+
+    .from-section .user-input
+    {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 300px)
+{
+    .buttons-section .section-content .main-btn
+    {
+        font-size: 1rem;
+        width: 6rem;
+    }
+}

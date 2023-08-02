@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempcon - Temperature Converter App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body class="flex">
+    <div class="container">
+        <!-- Header HTML Starts Here -->
+        <header class="flex flex-center header">
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <h1 class="site-logo">Tempcon</h1>
+                </div>
+            </nav>
+        </header>
+        <!-- Header HTML Ends Here -->
+
+        <!-- Main Part HTML Starts Here -->
+        <main class="flex flex-center main">
+
+            <!-- Section ONE: Current Temperature Details -->
+            <section class="input-section">
+                <div class="section-title"><h2>From</h2></div>
+
+                <div class="flex section-content from-section">
+                    <input type="text" class="user-input" id="user_input" placeholder="Enter Temperature">
+                    <div class="user-choice">
+                        <input type="radio" name="temperature_unit" value="C" id="C_temp_unit">
+                        <label for="C_temp_unit">&deg;C</label>
+                        <input type="radio" name="temperature_unit" value="F" id="F_temp_unit">
+                        <label for="F_temp_unit">&deg;F</label>
+                        <input type="radio" name="temperature_unit" value="K" id="K_temp_unit">
+                        <label for="K_temp_unit">&deg;K</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section TWO: Required Temperature Details -->
+            <section class="input-section">
+                <div class="section-title"><h2>To</h2></div>
+                <div class="section-content to-section">
+                    <select name="temperature_required" id="required_temp">
+                        <option value="" disabled selected>Select Desired Temperature</option>
+                        <option value="C">Celsius</option>
+                        <option value="F">Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Section THREE: Functionality Buttons -->
+            <section class="buttons-section">
+                <div class="flex section-content">
+                    <a href="" class="main-btn" id="convert_btn">Convert</a>
+                    <a href="" class="main-btn" id="clear-btn">Clear</a>
+                </div>
+            </section>
+
+            <!-- Section FOUR: Result Display -->
+            <section class="flex flex-center result-section">
+                <div class="section-content">
+                    <h3 id="converted_temp_result"></h3>
+                </div>
+            </section>
+        </main>
+        <!-- Main Part HTML Ends Here -->
+
+        <!-- Footer HTML Starts Here -->
+        <footer class="flex flex-center footer">
+            <span>Developed By <a href="https://ammad-hassan.web.app/" target="_blank">M. Ammad Hassan</a></span>
+        </footer>
+        <!-- Footer HTML Ends Here -->
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
